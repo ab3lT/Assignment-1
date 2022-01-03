@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\assignment_one\\assignment_one.csproj",
+      "projectUniqueName": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\Assignment-1\\assignment_one.csproj",
       "projectName": "assignment_one",
-      "projectPath": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\assignment_one\\assignment_one.csproj",
+      "projectPath": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\Assignment-1\\assignment_one.csproj",
       "packagesPath": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\assignment_one\\obj\\",
+      "outputPath": "C:\\Users\\SOSI.DESKTOP-L9KK7V7.000\\Desktop\\OOP_Assignment_one\\Assignment-1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,13 +1,14 @@
 ﻿using System;
-
+using static assignment_one.Palindrome;
 namespace assignment_one
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string revString = "";
             string input;
+           
             Console.Write("Enter string : ");
             input = Console.ReadLine();
             
@@ -17,6 +18,8 @@ namespace assignment_one
             
             Console.WriteLine($"Reverse String is : {revString}");
             
+            Palindrome pal = new Palindrome();
+            pal.palendrome(revString, input);
          
             Console.WriteLine("The program excuted perfectly!!");
         }

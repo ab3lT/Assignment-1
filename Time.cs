@@ -6,10 +6,10 @@ namespace assignment_one
     public class Time
     {
         public static System.Timers.Timer aTimer;
-        public static void SetTimer()
+        public static void SetTimer(int time)
         {
             // Create a timer with a two second interval.
-            aTimer = new System.Timers.Timer(2000);
+            aTimer = new System.Timers.Timer(time);
             // Hook up the Elapsed event for the timer. 
             // aTimer.Elapsed += OnTimedEvent;
             aTimer.AutoReset = true;

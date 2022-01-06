@@ -6,18 +6,13 @@ namespace assignment_one
     {
         public static void Main(string[] args)
         {
-            string revString = "";
-            string input;
+
             Menu.menu();
-            Time.SetTimer();
-            Console.Write("Enter string : ");
-            Time.SetTimer();
-            input = Console.ReadLine();
-            Reverse.reverse(input);
-            
-            Palindrome.palendrome(revString, input);
+            //Palindrome.palendrome(revString, input);
 
             Console.WriteLine("The program excuted perfectly!!");
+            Menu.menu();
+
         }
     }
 }

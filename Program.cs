@@ -8,19 +8,15 @@ namespace assignment_one
         {
             string revString = "";
             string input;
-           
+            Menu.menu();
+            Time.SetTimer();
             Console.Write("Enter string : ");
+            Time.SetTimer();
             input = Console.ReadLine();
+            Reverse.reverse(input);
             
-            for(int i=input.Length-1; i>=0; i--){
-                revString = revString + input[i];
-            }
-            
-            Console.WriteLine($"Reverse String is : {revString}");
-            
-            Palindrome pal = new Palindrome();
-            pal.palendrome(revString, input);
-         
+            Palindrome.palendrome(revString, input);
+
             Console.WriteLine("The program excuted perfectly!!");
         }
     }

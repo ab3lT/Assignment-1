@@ -74,7 +74,8 @@ namespace assignment_one
                 //string revString = "";
                 //Reverse.reverse(input);
                 // Palindrome.palendrome(revString,input);
-                Palindrome.isPalendrome(input);
+                //Palindrome.isPalendrome(input);
+                Palindrome.palendrome(input);
                 Time.SetTimer(5000);
                 Menu.meanAgain();
             }
@@ -117,9 +118,17 @@ namespace assignment_one
                 System.Console.WriteLine(
                     "==========================================================="
                 );
+                Menu.meanAgain();
+
             }
-            else if (menuChoice == "6") { }
-            else if (menuChoice == "7") { }
+            else if (menuChoice == "6") {
+                Menu.meanAgain();
+
+             }
+            else if (menuChoice == "7") { 
+                Menu.meanAgain();
+
+            }
         }
 
         private static void meanAgain()
@@ -131,7 +140,7 @@ namespace assignment_one
 
             System.Console.Write("=> ");
             string input = System.Console.ReadLine();
-            if (input == "yes" ^ input == "Yes")
+            if (input == "yes" ^ input == "Yes" ^ input == "y")
             {
                 menu();
             }

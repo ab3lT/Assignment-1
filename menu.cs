@@ -85,8 +85,11 @@ namespace assignment_one
             else if (menuChoice == "4")
             {
                 System.Console.WriteLine("=============================================================");
-                System.Console.WriteLine(" ||     To count the occurrence of each character in a string.");
+                System.Console.WriteLine(" ||    To count the occurrence of each character in a string.");
                 System.Console.WriteLine("==============================================================");
+                string str = Console.ReadLine();
+                Ocurrence.Occurrence(str);
+
             }
                 
                 

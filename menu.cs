@@ -1,6 +1,6 @@
 using System;
-
 using System.Timers;
+using System.Runtime.InteropServices;
 
 namespace assignment_one
 {
@@ -8,9 +8,7 @@ namespace assignment_one
     {
         public static void menu()
         {
-            string revString = "";
-            string input;
-            Time.SetTimer(3000);
+            Time.SetTimer(4000);
             System.Console.WriteLine("=======================================");
             System.Console.WriteLine("      Wellcome to OOP II project      ");
             System.Console.WriteLine("=======================================");
@@ -20,11 +18,10 @@ namespace assignment_one
             Console.Write("Please Enter your choice number : ");
             menuChoice = Console.ReadLine();
             menuListChoice(menuChoice);
-
         }
+
         private static void menuList()
         {
-
             System.Console.WriteLine("      Please enter the number to the project you went.");
             System.Console.WriteLine("=======================================================");
             System.Console.WriteLine("1|    To reverse a string");
@@ -39,19 +36,20 @@ namespace assignment_one
             Time.SetTimer(2000);
             System.Console.WriteLine("6|    TO find the second largest integer in an array");
             Time.SetTimer(2000);
-            System.Console.WriteLine("7|    To tonvert a two-dimensional array to a one-dimensional array");
+            System.Console.WriteLine(
+                "7|    To tonvert a two-dimensional array to a one-dimensional array"
+            );
             Time.SetTimer(2000);
-            System.Console.WriteLine("8|    To find the angle between hour and minute hands of a clock at any given time");
+            System.Console.WriteLine(
+                "8|    To find the angle between hour and minute hands of a clock at any given time"
+            );
             Time.SetTimer(2000);
-
-
         }
 
         public static void menuListChoice(string menuChoice)
         {
             if (menuChoice == "1")
             {
-
                 Time.SetTimer(5000);
                 System.Console.WriteLine("=======================================");
                 System.Console.WriteLine(" ||     To reverse a string     ||");
@@ -61,6 +59,7 @@ namespace assignment_one
                 string input = Console.ReadLine();
                 Reverse.reverse(input);
                 Time.SetTimer(5000);
+                Menu.meanAgain();
             }
             else if (menuChoice == "2")
             {
@@ -71,52 +70,77 @@ namespace assignment_one
 
                 Console.Write("Please Enter string : ");
                 string input = Console.ReadLine();
+
                 //string revString = "";
                 //Reverse.reverse(input);
-               // Palindrome.palendrome(revString,input);
+                // Palindrome.palendrome(revString,input);
                 Palindrome.isPalendrome(input);
-                
                 Time.SetTimer(5000);
+                Menu.meanAgain();
             }
-            else if (menuChoice == "3")
-            {
-
-            }
+            else if (menuChoice == "3") { }
             else if (menuChoice == "4")
             {
-                System.Console.WriteLine("=============================================================");
-                System.Console.WriteLine(" ||    To count the occurrence of each character in a string.");
-                System.Console.WriteLine("==============================================================");
+                System.Console.WriteLine(
+                    "============================================================="
+                );
+                System.Console.WriteLine(
+                    " ||    To count the occurrence of each character in a string."
+                );
+                System.Console.WriteLine(
+                    "=============================================================="
+                );
                 string str = Console.ReadLine();
                 Ocurrence.Occurrence(str);
-
+                Menu.meanAgain();
             }
-                
-                
             else if (menuChoice == "5")
             {
-              Time.SetTimer(5000);
-                System.Console.WriteLine("===========================================================");
-                System.Console.WriteLine(" ||     find all possible substrings of a given string    ");
-                System.Console.WriteLine("===========================================================");
+                Time.SetTimer(5000);
+                System.Console.WriteLine(
+                    "==========================================================="
+                );
+                System.Console.WriteLine(
+                    " ||     find all possible substrings of a given string    "
+                );
+                System.Console.WriteLine(
+                    "==========================================================="
+                );
 
                 Console.Write("Please Enter string : ");
-                string str = Console.ReadLine();   
+                string str = Console.ReadLine();
                 SubString.subString(str, str.Length);
-                System.Console.WriteLine("===========================================================");
+                System.Console.WriteLine(
+                    "==========================================================="
+                );
                 System.Console.WriteLine("");
-                System.Console.WriteLine("===========================================================");
-
-
+                System.Console.WriteLine(
+                    "==========================================================="
+                );
             }
-            else if (menuChoice == "6")
+            else if (menuChoice == "6") { }
+            else if (menuChoice == "7") { }
+        }
+
+        private static void meanAgain()
+        //TOdo : do exception handdling for this method
+        {
+            System.Console.WriteLine("Do you went to retrun to menu ??");
+            System.Console.WriteLine("To retrun to the menu write yes !");
+            System.Console.WriteLine("To exit the application please write any thing.:");
+
+            System.Console.Write("=> ");
+            string input = System.Console.ReadLine();
+            if (input == "yes" ^ input == "Yes")
             {
-
+                menu();
             }
-            else if (menuChoice == "7")
+            else
             {
-
+                System.Console.WriteLine("the application is closed sucessfully.");
+                Environment.Exit(0);
             }
+
 
         }
     }

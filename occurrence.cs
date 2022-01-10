@@ -2,29 +2,25 @@ using System;
 
 namespace assignment_one
 {
-    class Ocurrence{
-
-    
-    
+    class Ocurrence
+    {
         public static void Occurrence(string str)
         {
             Console.WriteLine("String: " + str);
             while (str.Length > 0)
             {
-                Console.Write(str[0] + " = ");
-                int cal = 0;
-                for (int j = 0; j < str.Length; j++)
+                Console.Write(str[0] + " => ");
+                int coccurance = 0;
+                for (int i = 0; i < str.Length; i++)
                 {
-                    if (str[0] == str[j])
+                    if (str[0] == str[i])
                     {
-                        cal++;
+                        coccurance++;
                     }
                 }
-                Console.WriteLine (cal);
+                Console.WriteLine (coccurance);
                 str = str.Replace(str[0].ToString(), string.Empty);
             }
-            
         }
     }
-
 }

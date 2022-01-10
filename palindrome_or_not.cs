@@ -33,11 +33,12 @@ namespace assignment_one
             {
                 if (input[i] != input[input.Length - 1 - i])
                 {
-                    System.Console.WriteLine($"The string " +"{input}" +"is not palendrome ");
+                    System.Console.WriteLine($"The string {input}is not palendrome ");
                     return false;
                 }
             }
-            System.Console.WriteLine("The string " +"{input}" +"is palendrome ");
+            
+            System.Console.WriteLine($"The string {input} is palendrome ");
             return true;
     }
     }

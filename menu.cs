@@ -79,7 +79,9 @@ namespace assignment_one
                 Time.SetTimer(5000);
                 Menu.meanAgain();
             }
-            else if (menuChoice == "3") { }
+            else if (menuChoice == "3") {
+                //TODO: DO NUMBER 3 
+             }
             else if (menuChoice == "4")
             {
                 System.Console.WriteLine(
@@ -91,6 +93,7 @@ namespace assignment_one
                 System.Console.WriteLine(
                     "=============================================================="
                 );
+                System.Console.Write("write a string => ");
                 string str = Console.ReadLine();
                 Ocurrence.Occurrence(str);
                 Menu.meanAgain();
@@ -122,17 +125,21 @@ namespace assignment_one
 
             }
             else if (menuChoice == "6") {
+                LargersIntiger.largint();
+
                 Menu.meanAgain();
 
              }
             else if (menuChoice == "7") { 
+                //TODO: DO NUMBER 7
+
                 Menu.meanAgain();
 
             }
         }
 
         private static void meanAgain()
-        //TOdo : do exception handdling for this method
+        //TODO : do exception handdling for this method
         {
             System.Console.WriteLine("Do you went to retrun to menu ??");
             System.Console.WriteLine("To retrun to the menu write yes !");

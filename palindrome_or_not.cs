@@ -8,7 +8,6 @@ namespace assignment_one
         {
             string upperInput = input;
             string lowerInput = input;
-            //Reverse.reverse(input);
             Reverse.reverse(upperInput);
             Reverse.reverse(lowerInput);
             if (upperInput == input)
@@ -21,31 +20,7 @@ namespace assignment_one
             else {
                 System.Console.WriteLine($"The stirng {input} is not palendrome");
             }
-/* 
-            if (Reverse.reverse(input) == input)
-            {
-                input.ToUpper();
-                if (revString == input)
-                {
-                    input.ToLower();
-                    if (revString == input)
-                    {
-                        Console.WriteLine(
-                            $"String is Palindrome \n Entered String Was {input} and reverse string is {revString}"
-                        );
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine(
-                    $"String is not Palindrome \n Entered String Was {input} and reverse string is {revString}",
-                    input,
-                    revString
-                );
-            } */
         }
-
         public static bool isPalendrome(string input)
         {
             string input_lower = input;
@@ -66,11 +41,8 @@ namespace assignment_one
                 else
                 {
                     return false;
-
-
                 }
             }
-
             System.Console.WriteLine($"The string {input} is palendrome ");
             return true;
         }

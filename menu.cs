@@ -140,7 +140,6 @@ namespace assignment_one
         }
 
         private static void meauAgain()
-        //TODO : do exception handdling for this method
         {
             System.Console.WriteLine("Do you went to retrun to menu ??");
             System.Console.WriteLine("To retrun to the menu write yes !");
@@ -157,7 +156,6 @@ namespace assignment_one
                 System.Console.WriteLine("the application is closed sucessfully.");
                 Environment.Exit(0);
             }
-
         }
     }
 }
